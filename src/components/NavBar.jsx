@@ -8,16 +8,16 @@ const NavBar = () => {
         <AppBar position="relative">
             <Wrapper>
                 <Left>
-                    <Link to='/' style={{textDecoration: "none", color: "white"}}><Logo>COD.ER $HO.P</Logo></Link>
+                    <Link to='/' style={{textDecoration: "none", color: "white"}}><Logo>Frutella Boutique</Logo></Link>
                 </Left>
                 <Center>
-                    <Link to='/category/9' style={{textDecoration: "none", color: "white"}}><MenuItem>Sin Alcohol</MenuItem></Link>
-                    <Link to='/category/1' style={{textDecoration: "none", color: "white"}}><MenuItem>Vinos</MenuItem></Link>
-                    <Link to='/category/5' style={{textDecoration: "none", color: "white"}}><MenuItem>Licores</MenuItem></Link>                    
+                    <Link to='/category/9' style={{textDecoration: "none", color: "white"}}><MenuItem>Frutas</MenuItem></Link>
+                    <Link to='/category/1' style={{textDecoration: "none", color: "white"}}><MenuItem>Verduras</MenuItem></Link>
+                    <Link to='/category/5' style={{textDecoration: "none", color: "white"}}><MenuItem>Hojas</MenuItem></Link>                    
                 </Center>
                 <Right>
-                    <MenuItem>REGISTER</MenuItem>
-                    <MenuItem>SIGN IN</MenuItem>
+                    <MenuItem>Registrarse</MenuItem>
+                    <MenuItem>Iniciar Sesion</MenuItem>
                     <MenuItem><CartWidget /></MenuItem>
                 </Right>
             </Wrapper>

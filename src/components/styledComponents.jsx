@@ -6,6 +6,15 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: orange
+`;
+const Wrapper2 = styled.div`
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffd9a1;
+    height: 2.5em;
 `;
 
 const Left = styled.div`
@@ -33,11 +42,41 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     margin-left: 25px;
 `;
 
+//Body
+const BodyDivs = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+`;
+
+// Body -- DETAIL
+const DetailDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 10px;
+    width: 15%;
+`;
+
+// Body -- PRINCIPAL 
+const PrincipalDiv = styled.div`
+    width: 70%;
+`;
+
+//Body -- Carrito
+const CarritoDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    margin: 10px;
+
+`;
 
 //ItemCount
 const ProductAmountContainer = styled.div`
@@ -161,7 +200,8 @@ const Price  = styled.span`
 `;
 
 export { 
-    Wrapper, Logo, MenuItem, Left, Center, Right, 
+    Wrapper, Wrapper2, Logo, MenuItem, Left, Center, Right,
+    BodyDivs, DetailDiv, PrincipalDiv, CarritoDiv,
     ProductAmountContainer, ProductAmount, 
     ProductsContainer, ProductContainer,
     Circle, Image, Info, Icon,

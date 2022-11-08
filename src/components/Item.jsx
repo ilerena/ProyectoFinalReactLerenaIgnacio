@@ -9,13 +9,16 @@ const Item = ({ id, title, stock, price, pictureUrl }) => {
             <Image src={pictureUrl} />
             <Info>
                 <Icon>
+                    <strong>{title}</strong>
+                </Icon>
+                <Icon>
                     <LocalOfferOutlined /><strong>$ {price}</strong>
                 </Icon>
                 <Icon>
-                    <DescriptionOutlined />{stock} unid.
+                    <DescriptionOutlined />{stock} KG
                 </Icon>
                 <Icon style={{cursor: "pointer"}}>
-                    <Link to={`/item/${id}`}><InfoOutlined />Details</Link>
+                    <Link to={`/item/${id}`}><InfoOutlined />Detalles</Link>
                 </Icon>
             </Info>
         </ProductContainer>
